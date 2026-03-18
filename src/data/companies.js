@@ -1,0 +1,1395 @@
+export const industries = [
+  {
+    id: "research",
+    label: "Research Institutes",
+    icon: "🔬",
+    companies: ["nifs", "iti", "slintec", "rrisl", "cri", "tri", "ichemc", "pri", "lscl", "hettigoda"],
+  },
+  {
+    id: "pharma",
+    label: "Pharmaceutical Industry",
+    icon: "💊",
+    companies: ["spmc", "aipl", "navesta", "spc", "astron", "theon", "cipla", "yaden"],
+  },
+  {
+    id: "food",
+    label: "Food & Beverage",
+    icon: "🍽️",
+    companies: ["nestle", "cbl", "fonterra", "lion"],
+  },
+  {
+    id: "cosmetic",
+    label: "Cosmetic Industry",
+    icon: "🧴",
+    companies: ["hemas", "oproma", "link", "unilever"],
+  },
+  {
+    id: "chemical",
+    label: "Chemical Manufacturing",
+    icon: "⚗️",
+    companies: ["uniken", "united_science", "mas_holdings", "carbon_activated", "macksons_paints", "nippon_paint", "jat_holdings", "neochem", "ceylon_oxygen"],
+  },
+  {
+    id: "analytical",
+    label: "Analytical Testing Labs",
+    icon: "🧪",
+    companies: ["microchem", "tech_experts", "intertek", "cecb", "lindel"],
+  },
+  {
+    id: "polymer",
+    label: "Polymer & Rubber",
+    icon: "🏭",
+    companies: ["ansell", "lalan"],
+  },
+];
+
+export const topRecruiters = ["nestle", "spmc", "nifs", "lion"];
+
+export const quickLinks = [
+  {
+    id: "vacancies",
+    label: "Current Vacancies",
+    icon: "💼",
+    links: [
+      { name: "SPMC Careers", url: "https://spmc.gov.lk/about-spmc/careers" },
+      { name: "NIFS Careers", url: "https://nifs.ac.lk/about/careers" },
+    ],
+  },
+  {
+    id: "lab_guide",
+    label: "Lab Equipment Guide",
+    icon: "🔭",
+    items: ["HPLC", "GC", "Spectrophotometers", "pH Meters", "Incubators"],
+  },
+];
+
+export const companies = {
+  nifs: {
+    id: "nifs",
+    name: "National Institute of Fundamental Studies (NIFS)",
+    shortName: "NIFS",
+    industry: "research",
+    industryLabel: "Research Institute",
+    icon: "🔬",
+    tagline: "Multidisciplinary government research in natural & social sciences",
+    description:
+      "A multidisciplinary government institute dedicated to basic research in natural and social sciences, mathematics, and philosophy. NIFS hosts divisions for Solid State Chemistry, Energy & Advanced Material Chemistry, Natural Products Chemistry, and Food Chemistry.",
+    location: {
+      headquarters: "Hantana Road, Kandy, Sri Lanka",
+      factory: "Additional Office: Colombo, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 81 232 3655",
+      email: "info@nifs.ac.lk",
+    },
+    careers: {
+      url: "https://nifs.ac.lk/about/careers",
+      label: "Visit NIFS Careers",
+    },
+    roles: [
+      "Research Chemist",
+      "Solid State Chemist",
+      "Natural Products Scientist",
+      "Food Chemist",
+      "Research Assistant",
+      "Senior Scientist",
+    ],
+    chemDivisions: [
+      "Solid State Chemistry",
+      "Energy & Advanced Material Chemistry",
+      "Natural Products Chemistry",
+      "Food Chemistry",
+    ],
+    labFacilities: ["FTIR Spectrophotometer", "UV-Visible Spectrophotometer", "ICP-OES", "XRD", "CNH Analyzer"],
+    featured: true,
+  },
+  iti: {
+    id: "iti",
+    name: "Industrial Technology Institute (ITI)",
+    shortName: "ITI",
+    industry: "research",
+    industryLabel: "Research Institute",
+    icon: "🔬",
+    tagline: "R&D and accredited testing for industrial development",
+    description:
+      "Formerly known as CISIR, the Industrial Technology Institute (ITI) provides R&D, technical services, and accredited testing to support Sri Lanka's industrial development. It operates Analytical Chemistry Suites and a Residue Analysis Laboratory for food and environmental testing.",
+    location: {
+      headquarters: "363, Bauddaloka Mawatha, Colombo 07, Sri Lanka",
+      factory: "R&D Complex, Malabe, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 11 269 3807",
+      email: "info@iti.lk",
+    },
+    careers: {
+      url: "https://iti.lk/index.php/en/vacancies",
+      label: "Visit ITI Careers",
+    },
+    roles: [
+      "Analytical Chemist",
+      "Food & Environmental Analyst",
+      "R&D Scientist",
+      "Lab Technician",
+      "Calibration Engineer",
+    ],
+    chemDivisions: [
+      "Analytical Chemistry Suite",
+      "Residue Analysis Laboratory (Food & Environmental)",
+    ],
+    labFacilities: ["Spectrometers", "Chromatographs", "Calibration Tools", "GC-MS", "HPLC"],
+    featured: false,
+  },
+  slintec: {
+    id: "slintec",
+    name: "Sri Lanka Institute of Nanotechnology (SLINTEC)",
+    shortName: "SLINTEC",
+    industry: "research",
+    industryLabel: "Research Institute",
+    icon: "🔬",
+    tagline: "Nanotechnology R&D for energy, agriculture & healthcare",
+    description:
+      "A public-private partnership focused on nanotechnology R&D for energy, agriculture, and healthcare applications. SLINTEC operates a Synthetic & Medicinal Organic Lab, Wet Chemical Lab, and a Nano Characterization Lab at the Nanotechnology & Science Park.",
+    location: {
+      headquarters: "Nanotechnology & Science Park, Homagama, Sri Lanka",
+      factory: null,
+    },
+    contact: {
+      phone: "+94 11 440 1400",
+      email: "info@slintec.lk",
+    },
+    careers: {
+      url: "https://slintec.lk/careers",
+      label: "Visit SLINTEC Careers",
+    },
+    roles: [
+      "Nanotechnology Researcher",
+      "Organic Chemist",
+      "Wet Chemical Lab Analyst",
+      "Materials Scientist",
+      "R&D Engineer",
+    ],
+    chemDivisions: [
+      "Synthetic & Medicinal Organic Lab",
+      "Wet Chemical Lab",
+      "Nano Characterization Lab",
+    ],
+    labFacilities: ["Electron Microscope (EM)", "Raman Spectroscopy", "Particle Size Analyzers", "X-ray Fluorescence (XRF)"],
+    featured: false,
+  },
+  rrisl: {
+    id: "rrisl",
+    name: "Rubber Research Institute of Sri Lanka (RRISL)",
+    shortName: "RRISL",
+    industry: "research",
+    industryLabel: "Research Institute",
+    icon: "🔬",
+    tagline: "World's oldest rubber research body",
+    description:
+      "The world's oldest rubber research institution, covering cultivation, processing, and product technology. RRISL's chemistry departments focus on raw rubber & chemical analysis, polymer chemistry, and process development, ensuring standards compliance for Sri Lanka's rubber industry.",
+    location: {
+      headquarters: "Agalawatta, Sri Lanka",
+      factory: "Technology Labs: Ratmalana, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 34 224 7426",
+      email: "info@rrisl.gov.lk",
+    },
+    careers: {
+      url: "https://rrisl.gov.lk/web/index.php/en/vacancies",
+      label: "Visit RRISL Careers",
+    },
+    roles: [
+      "Polymer Chemist",
+      "Raw Rubber Analyst",
+      "Process Development Scientist",
+      "Quality Standards Chemist",
+    ],
+    chemDivisions: [
+      "Raw Rubber & Chemical Analysis",
+      "Polymer Chemistry",
+      "Process Development",
+    ],
+    labFacilities: ["Analytical Chemistry Instruments", "Rubber Property Testing Apparatus", "Rheometers", "Tensile Testers"],
+    featured: false,
+  },
+  cri: {
+    id: "cri",
+    name: "Coconut Research Institute of Sri Lanka (CRI)",
+    shortName: "CRI",
+    industry: "research",
+    industryLabel: "Research Institute",
+    icon: "🔬",
+    tagline: "National body for coconut science & value-addition",
+    description:
+      "The national body specializing in coconut science, productivity improvement, and value-addition of coconut-based products. CRI's Central Analytical Laboratory (CAL) performs chemical analysis of soil, water, fertilizers, and coconut-based food products.",
+    location: {
+      headquarters: "Bandirippuwa Estate, Lunuwila, Sri Lanka",
+      factory: null,
+    },
+    contact: {
+      phone: "+94 31 225 7400",
+      email: "info@cri.gov.lk",
+    },
+    careers: {
+      url: "https://cri.gov.lk/web/index.php/en/career",
+      label: "Visit CRI Careers",
+    },
+    roles: [
+      "Analytical Chemist",
+      "Soil & Water Chemist",
+      "Food Chemist",
+      "Agricultural Scientist",
+    ],
+    chemDivisions: [
+      "Central Analytical Laboratory (CAL) — Soil, Water, Fertilizer & Food Analysis",
+    ],
+    labFacilities: ["Atomic Absorption Spectrophotometer (AAS)", "HPLC", "GC", "Moisture Analyzers"],
+    featured: false,
+  },
+  tri: {
+    id: "tri",
+    name: "Tea Research Institute of Sri Lanka (TRI)",
+    shortName: "TRI",
+    industry: "research",
+    industryLabel: "Research Institute",
+    icon: "🔬",
+    tagline: "Dedicated to the science & biochemistry of tea",
+    description:
+      "Dedicated to tea science including plant breeding, biochemistry, and processing technology. TRI's Biochemistry Division studies polyphenols, catechins, and caffeine. It uses HPLC for profiling tea components and GC for volatile compound analysis.",
+    location: {
+      headquarters: "Talawakelle, Sri Lanka",
+      factory: null,
+    },
+    contact: {
+      phone: "+94 52 222 2301",
+      email: "info@tri.gov.lk",
+    },
+    careers: {
+      url: "https://tri.gov.lk/vacancies",
+      label: "Visit TRI Careers",
+    },
+    roles: [
+      "Biochemist",
+      "Tea Quality Analyst",
+      "Plant Scientist",
+      "Flavour & Aroma Chemist",
+    ],
+    chemDivisions: [
+      "Biochemistry Division (Polyphenols, Catechins & Caffeine)",
+    ],
+    labFacilities: ["HPLC (Tea Component Profiling)", "GC (Volatile Compound Analysis)", "Biochemical Assay Kits"],
+    featured: false,
+  },
+  ichemc: {
+    id: "ichemc",
+    name: "Institute of Chemistry Ceylon (IChemC)",
+    shortName: "IChemC",
+    industry: "research",
+    industryLabel: "Research Institute",
+    icon: "🔬",
+    tagline: "Professional & academic body for chemical science",
+    description:
+      "A professional and academic body offering a BSc Honours in Chemical Science and various diplomas. IChemC's Instrument Center houses UV-Visible and Fluorescence spectrophotometers, Flame/Furnace AAS, FT-IR, and Gas Chromatographs. It also operates a Computational Research Center for molecular modeling.",
+    location: {
+      headquarters: "Rajagiriya, Sri Lanka",
+      factory: null,
+    },
+    contact: {
+      phone: "+94 11 286 3541",
+      email: "info@chemCeylon.lk",
+    },
+    careers: {
+      url: "https://chemceylon.com/vacancies",
+      label: "Visit IChemC Vacancies",
+    },
+    roles: [
+      "Analytical Chemist",
+      "Chemistry Lecturer / Trainer",
+      "Computational Researcher",
+      "Lab Demonstrator",
+    ],
+    chemDivisions: [
+      "Instrument Center",
+      "Computational Research Center (Molecular Modeling & Simulations)",
+    ],
+    labFacilities: ["UV-Visible Spectrophotometer", "Fluorescence Spectrophotometer", "Flame/Furnace AAS", "FT-IR", "Gas Chromatographs"],
+    featured: false,
+  },
+  pri: {
+    id: "pri",
+    name: "Palmyrah Research Institute (PRI)",
+    shortName: "PRI",
+    industry: "research",
+    industryLabel: "Research Institute",
+    icon: "🔬",
+    tagline: "Research on value-added palm products from the North",
+    description:
+      "Research arm of the Palmyrah Development Board focusing on value-added palm products. PRI operates an ISO 17025 accredited Analytical Lab, a Biochemistry Lab, and a Food & Technology Lab at its Jaffna Peninsula facility.",
+    location: {
+      headquarters: "Kaithady, Jaffna Peninsula, Sri Lanka",
+      factory: null,
+    },
+    contact: {
+      phone: "+94 21 221 5346",
+      email: "info@palmyrahboard.lk",
+    },
+    careers: {
+      url: "https://palmyrahboard.lk/vacancies",
+      label: "Visit PRI Careers",
+    },
+    roles: [
+      "Analytical Chemist",
+      "Biochemist",
+      "Food Technologist",
+      "Lab Technician",
+    ],
+    chemDivisions: [
+      "Analytical Lab (ISO 17025 Accredited)",
+      "Biochemistry Lab",
+      "Food & Technology Lab",
+    ],
+    labFacilities: ["Spectrophotometers", "pH Meters", "GC", "HPLC", "Separation Systems"],
+    featured: false,
+  },
+  lscl: {
+    id: "lscl",
+    name: "Lanka Sugar Company (LSCL)",
+    shortName: "Lanka Sugar (LSCL)",
+    industry: "research",
+    industryLabel: "Research Institute",
+    icon: "🔬",
+    tagline: "Sugar & by-products manufacturing with on-site QC labs",
+    description:
+      "A state-owned enterprise manufacturing sugar and by-products such as ethanol and potable alcohol at its Pelwatte and Sevanagala units. Quality Control Labs use refractometers, pH meters, and polarimetry instruments to monitor sugar purity and sucrose content.",
+    location: {
+      headquarters: "Pelwatte, Sri Lanka",
+      factory: "Sevanagala, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 55 227 5001",
+      email: "info@lankasugar.lk",
+    },
+    careers: {
+      url: "https://lankasugar.lk/careers",
+      label: "Visit LSCL Careers",
+    },
+    roles: [
+      "Quality Control Chemist",
+      "Sugar Process Analyst",
+      "Lab Technician",
+      "Ethanol Process Chemist",
+    ],
+    chemDivisions: [
+      "Quality Control Laboratory (Sugar, Ethanol & Alcohol Production)",
+    ],
+    labFacilities: ["Refractometers (°Brix)", "pH Meters", "Polarimetry", "Moisture Analyzers", "Spectrophotometers", "Microscopes"],
+    featured: false,
+  },
+  hettigoda: {
+    id: "hettigoda",
+    name: "Hettigoda Group (Siddhalepa)",
+    shortName: "Hettigoda / Siddhalepa",
+    industry: "research",
+    industryLabel: "Research Institute",
+    icon: "🔬",
+    tagline: "Ayurveda-rooted herbal medicine & personal care",
+    description:
+      "A conglomerate rooted in Ayurveda, manufacturing herbal medicines and personal care items under the Siddhalepa brand. Labs are used for herbal ingredient identification, stability testing, and ISO/GMP compliance, with a strong focus on analytical quality profiling.",
+    location: {
+      headquarters: "Ratmalana, Sri Lanka",
+      factory: "Ratmalana, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 11 263 7637",
+      email: "info@siddhalepa.com",
+    },
+    careers: {
+      url: "https://siddhalepa.com/careers",
+      label: "Visit Siddhalepa Careers",
+    },
+    roles: [
+      "Herbal Chemist",
+      "Quality Control Analyst",
+      "Stability Testing Officer",
+      "Microbiologist",
+      "GMP Compliance Officer",
+    ],
+    chemDivisions: [
+      "Herbal Ingredient Identification Lab",
+      "Stability Testing Lab (ISO/GMP)",
+      "Microbiology Station",
+    ],
+    labFacilities: ["HPLC (Quality Profiling)", "GC", "Stability Chambers", "Microbiology Stations"],
+    featured: false,
+  },
+  spmc: {
+    id: "spmc",
+    name: "State Pharmaceuticals Manufacturing Corporation (SPMC)",
+    shortName: "SPMC",
+    industry: "pharma",
+    industryLabel: "Pharmaceutical",
+    icon: "💊",
+    tagline: "Government-owned pharmaceutical manufacturer established in 1987",
+    description:
+      "A government-owned pharmaceutical manufacturer established in 1987. It produces a wide range of essential generic drugs and adheres to international standards like WHO-GMP.",
+    location: {
+      headquarters: "No. 11, Sir John Kotelawala Mawatha, Kandawala Estate, Ratmalana, Sri Lanka.",
+      factory: null,
+    },
+    contact: {
+      phone: "+94 11 2636966 / +94 11 2635353",
+      email: "chairman@spmc.gov.lk",
+    },
+    careers: {
+      url: "https://spmc.gov.lk/about-spmc/careers",
+      label: "Visit SPMC Careers",
+    },
+    roles: [
+      "Analytical Chemist",
+      "Microbiologist",
+      "QC Analyst",
+      "Production Supervisor",
+    ],
+    labFacilities: ["Analytical Labs", "Microbiology Labs", "HPLC", "GC", "UV-Vis Spectrophotometer", "Dissolution Testers"],
+    featured: true,
+  },
+  aipl: {
+    id: "aipl",
+    name: "Analytical Instruments (Pvt) Ltd (AIPL)",
+    shortName: "AIPL",
+    industry: "pharma",
+    industryLabel: "Pharmaceutical Products & Tech",
+    icon: "💊",
+    tagline: "Advanced laboratory, medical, and analytical tech products",
+    description:
+      "Established in 1989, AIPL supplies advanced laboratory, medical, and analytical technology products and services across multiple sectors.",
+    location: {
+      headquarters: "No. 100, Elvitigala Mawatha, Colombo 08, Sri Lanka.",
+      factory: null,
+    },
+    contact: {
+      phone: "+94 11 263 9000 / +94 11 269 9282",
+      email: "analytical@aipl.lk",
+    },
+    careers: {
+      url: "https://health.aipl.lk/careers/",
+      label: "Visit AIPL Careers",
+    },
+    roles: [
+      "Technical Support Specialist",
+      "Service Engineer",
+      "Product Specialist",
+    ],
+    labFacilities: ["Spectroscopy Systems", "Chromatography Equipment", "SEM Systems", "XPS Systems", "High-End Analytical Tools"],
+    featured: false,
+  },
+  navesta: {
+    id: "navesta",
+    name: "Navesta Pharmaceuticals (Pvt) Ltd",
+    shortName: "Navesta",
+    industry: "pharma",
+    industryLabel: "Pharmaceutical",
+    icon: "💊",
+    tagline: "Specializing in sterile products & injectable beta-lactam antibiotics",
+    description:
+      "A privately-held manufacturer specializing in sterile products, particularly dry-powder injectable beta-lactam antibiotics. First of its kind in Sri Lanka.",
+    location: {
+      headquarters: "Rajagiriya, Colombo, Sri Lanka",
+      factory: "Horana, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 11 286 1800 (Head Office) / +94 34 225 4200 (Factory)",
+      email: "info@navesta.com",
+    },
+    careers: {
+      url: "https://www.linkedin.com/company/navestapharmaceuticals",
+      label: "Visit Navesta LinkedIn",
+    },
+    roles: [
+      "Microbiologist",
+      "QC Executive",
+      "QA Agent",
+      "Validation Executive",
+    ],
+    labFacilities: ["EU-GMP Compliant A & B Grade Microbiology Labs", "Clean Rooms", "Walk-in Incubators", "Calibrated Measurement Instruments"],
+    featured: false,
+  },
+  spc: {
+    id: "spc",
+    name: "State Pharmaceuticals Corporation of Sri Lanka (SPC)",
+    shortName: "SPC",
+    industry: "pharma",
+    industryLabel: "Pharmaceutical Procurement",
+    icon: "💊",
+    tagline: "Central procurement & supply of pharmaceuticals and lab equipment",
+    description:
+      "State-owned enterprise established in 1971 for central procurement and supply of pharmaceuticals and lab equipment. Performs quality assurance testing of products before supply.",
+    location: {
+      headquarters: "16th Floor, MEHEWARA PIYASA, No. 41, Kirula Road, Colombo 05, Sri Lanka.",
+      factory: null,
+    },
+    contact: {
+      phone: "+94 11 2320350",
+      email: "chairman@spc.lk",
+    },
+    careers: {
+      url: "https://spc.lk/careers.php",
+      label: "Visit SPC Careers",
+    },
+    roles: [
+      "QA Analyst",
+      "Procurement Chemist",
+      "QC Testing Officer",
+    ],
+    labFacilities: ["HPLC", "GC", "Karl Fischer Titrators", "Dissolution Testers"],
+    featured: false,
+  },
+  astron: {
+    id: "astron",
+    name: "Astron Limited",
+    shortName: "Astron",
+    industry: "pharma",
+    industryLabel: "Pharmaceutical",
+    icon: "💊",
+    tagline: "Sri Lanka's first pharmaceutical manufacturing facility",
+    description:
+      "Incorporated in 1956, Astron is the first pharmaceutical manufacturing facility in Sri Lanka. It manufactures healthcare, herbal, and animal health products.",
+    location: {
+      headquarters: "No. 688, Galle Road, Ratmalana, Western Province, Sri Lanka.",
+      factory: "No. 688, Galle Road, Ratmalana, Western Province, Sri Lanka.",
+    },
+    contact: {
+      phone: "+94 11 214 8799 / +94 11 263 6741",
+      email: "careers@astron.lk",
+    },
+    careers: {
+      url: "https://astron.lk/index.php/careers/vacancies",
+      label: "Visit Astron Careers",
+    },
+    roles: [
+      "Product Development Chemist",
+      "Microbiology Lab Analyst",
+      "QC Executive",
+      "Production Pharmacist",
+    ],
+    labFacilities: ["ISO/IEC 17025:2017 Accredited Chemical Lab", "Accredited Microbiology Lab", "UV-Visible Spectrophotometers", "HPLC", "Stability Chambers"],
+    featured: false,
+  },
+  theon: {
+    id: "theon",
+    name: "Theon Pharmaceuticals Ltd.",
+    shortName: "Theon Pharma",
+    industry: "pharma",
+    industryLabel: "Pharmaceutical",
+    icon: "💊",
+    tagline: "WHO-GMP certified manufacturer of tablets and injectables",
+    description:
+      "An Indian WHO-GMP certified manufacturer producing finished dosage forms like tablets and injectables, supplying the global and Sri Lankan markets.",
+    location: {
+      headquarters: "Haryana, India (Corporate)",
+      factory: "Himachal Pradesh, India (Manufacturing)",
+    },
+    contact: {
+      phone: "+91 0172-5210200",
+      email: "info@theonpharma.com",
+    },
+    careers: {
+      url: "https://theonpharma.com/careers/",
+      label: "Visit Theon Careers",
+    },
+    roles: [
+      "R&D Scientist",
+      "QC Technician",
+      "Formulation Specialist",
+    ],
+    labFacilities: ["Dedicated R&D Centre", "QC Laboratories", "HPLC", "Stability Chambers"],
+    featured: false,
+  },
+  cipla: {
+    id: "cipla",
+    name: "Cipla Pharma Lanka Pvt Ltd",
+    shortName: "Cipla Lanka",
+    industry: "pharma",
+    industryLabel: "Pharmaceutical Distribution",
+    icon: "💊",
+    tagline: "Distributing respiratory, cardiac, and acute therapies",
+    description:
+      "Sri Lankan arm of Cipla Limited, focusing on marketing and distributing respiratory, cardiac, and acute therapies locally.",
+    location: {
+      headquarters: "345 - 4/1, Galle Road, Colombo - 03, Sri Lanka.",
+      factory: "Global Manufacturing Hubs",
+    },
+    contact: {
+      phone: "+94 11 2577 731 / +94 11 2577 730",
+      email: "drugsafety@cipla.com",
+    },
+    careers: {
+      url: "https://www.cipla.com/careers",
+      label: "Visit Cipla Careers",
+    },
+    roles: [
+      "Medical Representative",
+      "Regulatory Affairs Specialist",
+      "Supply Chain Executive",
+    ],
+    labFacilities: ["Global: HPLC, GC, Microbiology Labs"],
+    featured: false,
+  },
+  yaden: {
+    id: "yaden",
+    name: "Yaden Laboratories (Pvt) Ltd",
+    shortName: "Yaden Labs",
+    industry: "pharma",
+    industryLabel: "Pharmaceutical",
+    icon: "💊",
+    tagline: "Specializing in sterile medicines, injectables, and drops",
+    description:
+      "A privately held manufacturer specializing in sterile medicines, injectables, and eye/ear drops.",
+    location: {
+      headquarters: "Colombo 10, Sri Lanka.",
+      factory: "Katunayake Export Processing Zone, Sri Lanka.",
+    },
+    contact: {
+      phone: "+94 112 687 330",
+      email: "info@yadenlabs.com",
+    },
+    careers: {
+      url: "https://yadenlabs.com/careers/",
+      label: "Visit Yaden Careers",
+    },
+    roles: [
+      "Sterile Environment specialist",
+      "QC Lab Technician",
+      "Raw Materials Analyst",
+    ],
+    labFacilities: ["Advanced QC Laboratories", "Raw Material Testing Hub", "In-Process Analysis Equip.", "Stability Studies Chambers"],
+    featured: false,
+  },
+  nestle: {
+    id: "nestle",
+    name: "Nestlé Lanka PLC",
+    shortName: "Nestlé Lanka",
+    industry: "food",
+    industryLabel: "Food & Beverage",
+    icon: "🍽️",
+    tagline: "World's largest nutrition, health, and wellness company subsidiary",
+    description:
+      "A subsidiary of the global Nestlé Group, it is the world’s largest nutrition, health, and wellness company, producing milk powder, coffee, cereals, and culinary products.",
+    location: {
+      headquarters: "440, T.B. Jayah Mawatha, Colombo 10, Sri Lanka",
+      factory: "Kurunegala Factory, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 11 269 9991 / Consumer services: +94 11 4724724",
+      email: "careers.lanka@lk.nestle.com",
+    },
+    careers: {
+      url: "https://www.nestle.lk/",
+      label: "Visit Nestlé Website",
+    },
+    roles: [
+      "Food Technologist",
+      "QC Chemist",
+      "Nutrition Scientist",
+      "Lab Analyst",
+      "Process Engineer",
+    ],
+    labFacilities: ["ISO/IEC 17025 Accredited Chemical & Biological Testing", "HPLC", "GC", "Spectrophotometers", "AAS", "Microbiology Incubators"],
+    featured: true,
+  },
+  cbl: {
+    id: "cbl",
+    name: "Ceylon Biscuits Limited — Munchee",
+    shortName: "CBL (Munchee)",
+    industry: "food",
+    industryLabel: "Food & Beverage",
+    icon: "🍽️",
+    tagline: "Leading food manufacturer in Sri Lanka",
+    description:
+      "A leading Sri Lankan food manufacturer specializing in biscuits, chocolates, cakes, soy products, and snacks.",
+    location: {
+      headquarters: "No. 555, High-Level Road, Makumbura, Pannipitiya, Colombo.",
+      factory: "Pannipitiya & Minuwangoda, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 11 500 0000",
+      email: "import.cbl@cbllk.com",
+    },
+    careers: {
+      url: "https://cbllk.com/",
+      label: "Visit CBL Website",
+    },
+    roles: [
+      "Food Scientist",
+      "Quality Assurance Officer",
+      "Microbiologist",
+      "R&D Technologist",
+    ],
+    labFacilities: ["In-house R&D and QA Labs", "Sensory Evaluation Suites", "Spectrophotometers", "HPLC / GC", "Microbiological Incubators"],
+    featured: false,
+  },
+  fonterra: {
+    id: "fonterra",
+    name: "Fonterra Brands Lanka (Pvt) Ltd",
+    shortName: "Fonterra",
+    industry: "food",
+    industryLabel: "Food & Beverage",
+    icon: "🥛",
+    tagline: "Producing beloved dairy brands like Anchor and Newdale",
+    description:
+      "A subsidiary of the global dairy co-operative Fonterra, it processes milk from local farmers into brands like Anchor and Anchor Newdale.",
+    location: {
+      headquarters: "No. 100, Delgoda Road, Biyagama, Gampaha District.",
+      factory: "Biyagama, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 11 2488032 / Consumer care: +94 11 2488255",
+      email: "careers@fonterra.com",
+    },
+    careers: {
+      url: "https://www.fonterra.com/lk/en/",
+      label: "Visit Fonterra Website",
+    },
+    roles: [
+      "Dairy Technologist",
+      "Quality Assurance Executive",
+      "Food Safety Specialist",
+    ],
+    labFacilities: ["ISO/IEC 17025 Accredited Lab", "Moisture/Total Solids Analyzers", "Titration Setups", "HPLC", "Biological Safety Cabinets"],
+    featured: false,
+  },
+  hemas: {
+    id: "hemas",
+    name: "Hemas Consumer Brands",
+    shortName: "Hemas Consumer",
+    industry: "cosmetic",
+    industryLabel: "Cosmetic Industry",
+    icon: "🧴",
+    tagline: "Specializing in home and personal care products",
+    description:
+      "Part of Hemas Holdings PLC, it specializes in home and personal care items like hair care, skin care, and oral care products.",
+    location: {
+      headquarters: "75, Braybrooke Place, Colombo 02, Sri Lanka",
+      factory: "Dankotuwa, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 11 473 1731",
+      email: "consumercare@hemas.com",
+    },
+    careers: {
+      url: "https://www.hemas.com/consumer-brands.html",
+      label: "Visit Hemas Website",
+    },
+    roles: [
+      "Formulation Chemist",
+      "Quality Control Executive",
+      "R&D Scientist",
+    ],
+    labFacilities: ["ISO 9001:2015 Certified QA Labs", "pH Meters", "Spectrophotometers", "GC / HPLC", "Viscometers", "Stability Chambers"],
+    featured: false,
+  },
+  oproma: {
+    id: "oproma",
+    name: "Oproma Cosmetics (Pvt) Ltd",
+    shortName: "Oproma",
+    industry: "cosmetic",
+    industryLabel: "Cosmetic Industry",
+    icon: "🧴",
+    tagline: "Skincare formulation & third-party manufacturing",
+    description:
+      "Specialized in skincare and healthcare products, manufacturing own brands like OPLEE and providing third-party services.",
+    location: {
+      headquarters: "No. 223/1, Batahena Road, Kirikiththa, Weliweriya, Gampaha.",
+      factory: "Weliweriya, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 70 303 0420",
+      email: "info@opromacosmetics.com",
+    },
+    careers: {
+      url: "https://www.opromacosmetics.com/",
+      label: "Visit Oproma Website",
+    },
+    roles: [
+      "Skincare formulator",
+      "Microbiology Analyst",
+      "Raw Materials Examiner",
+    ],
+    labFacilities: ["GMP and ISO-certified labs", "Skincare Formulation Labs", "Raw Material Testing", "Microbial Analysis Hub"],
+    featured: false,
+  },
+  link: {
+    id: "link",
+    name: "Link Natural Products (Pvt) Ltd",
+    shortName: "Link Natural",
+    industry: "cosmetic",
+    industryLabel: "Cosmetic & Healthcare",
+    icon: "🌿",
+    tagline: "Blending Ayurvedic wisdom with modern science",
+    description:
+      "A research-driven manufacturer blending Ayurvedic wisdom with modern science to produce healthcare and personal care products like Samahan.",
+    location: {
+      headquarters: "P.O. Box 2, Malinda, Kapugoda, Western Province.",
+      factory: "Kapugoda, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 115 606 060",
+      email: "info@linknaturalproducts.com",
+    },
+    careers: {
+      url: "https://www.linknaturalproducts.com/",
+      label: "Visit Link Natural Website",
+    },
+    roles: [
+      "organic & natural product chemist",
+      "R&D Specialist",
+      "Extraction & Isolation Technician",
+    ],
+    labFacilities: ["Purpose-built R&D Centre for Organic Chemistry", "Pilot Plant for Industrial Scale-up", "Extraction and Isolation Tools"],
+    featured: false,
+  },
+  unilever: {
+    id: "unilever",
+    name: "Unilever Sri Lanka Limited",
+    shortName: "Unilever",
+    industry: "cosmetic",
+    industryLabel: "FMCG / Cosmetics",
+    icon: "🧴",
+    tagline: "Producing hygiene, home care, and beauty brands",
+    description:
+      "A major FMCG company producing hygiene, home care, and beauty brands like Dove and Sunsilk.",
+    location: {
+      headquarters: "258 M Vincent Perera Mawatha, Colombo 14, Sri Lanka.",
+      factory: "Major Factory Complex in Horana, Sri Lanka.",
+    },
+    contact: {
+      phone: "+94 11-4700800 / Consumer Careline: 1323",
+      email: "careers@unilever.com",
+    },
+    careers: {
+      url: "https://careers.unilever.com/",
+      label: "Visit Unilever Careers",
+    },
+    roles: [
+      "Process Chemist",
+      "QA Manager",
+      "Product Developer",
+    ],
+    labFacilities: ["Advanced R&D and QC Labs", "High Throughput Testing Equipment", "Formulation Hubs"],
+    featured: false,
+  },
+  lion: {
+    id: "lion",
+    name: "Lion Brewery (Ceylon) PLC",
+    shortName: "Lion Brewery",
+    industry: "food",
+    industryLabel: "Food & Beverage",
+    icon: "🍺",
+    tagline: "Sri Lanka's premium brewery",
+    description:
+      "Lion Brewery (Ceylon) PLC is the leading brewer in Sri Lanka, producing premium beers and malt beverages, known for rigorous quality control and modern brewing science.",
+    location: {
+      headquarters: "254, Colombo Road, Biyagama EPZ, Sri Lanka",
+      factory: "Biyagama Export Processing Zone, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 11 248 5000",
+      email: "hr@lionbeer.lk",
+    },
+    careers: {
+      url: "https://www.lionbeer.lk/careers",
+      label: "Visit Lion Brewery Careers",
+    },
+    roles: [
+      "Brewing Chemist",
+      "QC Analyst",
+      "Microbiologist",
+      "Water Treatment Chemist",
+    ],
+    labFacilities: ["GC", "Spectrophotometer", "Microbiology Labs", "pH Meters", "HPLC"],
+    featured: true,
+  },
+  uniken: {
+    id: "uniken",
+    name: "Uniken Lanka Ltd",
+    shortName: "Uniken Lanka",
+    industry: "chemical",
+    industryLabel: "Chemical Manufacturing",
+    icon: "⚗️",
+    tagline: "Industrial and water-treatment chemical solutions",
+    description:
+      "Established in 1996, this company specializes in industrial and water-treatment solutions, including boiler/cooling water systems, effluent/wastewater solutions, and chemical supply for industries like rubber, paint, and food processing.",
+    location: {
+      headquarters: "51A, Sri Sangaraja Mawatha, Colombo 10, Sri Lanka.",
+      factory: null,
+    },
+    contact: {
+      phone: "+94 11 2459747 / +94 11 2430995",
+      email: "uniken@sltnet.lk",
+    },
+    careers: {
+      url: "https://unikenlanka.com",
+      label: "Visit Uniken Website",
+    },
+    roles: [
+      "water treatment chemist",
+      "chemical process engineer",
+      "quality control chemist",
+    ],
+    labFacilities: ["Water Quality Testing Labs", "Wastewater Testing Labs", "pH Meters", "Spectrophotometers", "Turbidity Meters"],
+    featured: false,
+  },
+  united_science: {
+    id: "united_science",
+    name: "United Science Organization",
+    shortName: "United Science Organization",
+    industry: "chemical",
+    industryLabel: "R&D / Advanced Materials",
+    icon: "⚗️",
+    tagline: "Focused on nanotechnology and advanced materials",
+    description:
+      "An R&D organization focused on nanotechnology, advanced materials, and climate technologies such as CO2 capture and graphene production. Primary research led by scientists like Dr. Shehan de Silva.",
+    location: {
+      headquarters: "Operates internationally",
+      factory: null,
+    },
+    contact: {
+      phone: "See website",
+      email: "See online contact form",
+    },
+    careers: {
+      url: "https://unitedscience.org",
+      label: "Visit United Science",
+    },
+    roles: [
+      "research scientist (nanomaterials)",
+      "materials chemist",
+      "R&D chemist",
+    ],
+    labFacilities: ["Advanced Materials Synthesis Labs", "Characterization Labs", "SEM", "TEM", "XRD", "FTIR Spectroscopy"],
+    featured: false,
+  },
+  mas_holdings: {
+    id: "mas_holdings",
+    name: "MAS Holdings",
+    shortName: "MAS Holdings",
+    industry: "chemical",
+    industryLabel: "Textile Chemistry",
+    icon: "⚗️",
+    tagline: "Multinational apparel manufacturer driving textile innovation",
+    description:
+      "A multinational apparel manufacturer founded in 1987, known for textile innovation and sustainability. A significant employer of textile and materials chemistry professionals in Sri Lanka.",
+    location: {
+      headquarters: "199, Kaduwela Road, Battaramulla, Sri Lanka.",
+      factory: "Multiple Locations",
+    },
+    contact: {
+      phone: "+94 11 453 3900",
+      email: "info@masholdings.com",
+    },
+    careers: {
+      url: "https://masholdings.com",
+      label: "Visit MAS Holdings",
+    },
+    roles: [
+      "textile chemist",
+      "dyeing/finishing technologist",
+      "sustainability chemist",
+    ],
+    labFacilities: ["Textile Testing Labs", "Dyeing/Finishing Labs", "Environmental Labs", "Spectrophotometers", "GC", "Fiber Analysis Microscopes"],
+    featured: false,
+  },
+  carbon_activated: {
+    id: "carbon_activated",
+    name: "Carbon Activated Corporation Lanka (Pvt) Ltd",
+    shortName: "Carbon Activated",
+    industry: "chemical",
+    industryLabel: "Chemical Manufacturing",
+    icon: "⚗️",
+    tagline: "Manufacturing activated carbon from coconut shells",
+    description:
+      "A subsidiary of a global corporation specializing in manufacturing activated carbon from coconut shells for water and air purification.",
+    location: {
+      headquarters: "Dunkannawa, Nattandiya, Sri Lanka.",
+      factory: "Nattandiya, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 32 2254302",
+      email: "info-srilanka@activatedcarbon.com",
+    },
+    careers: {
+      url: "https://carbonactivatedlanka.com",
+      label: "Visit Carbon Activated",
+    },
+    roles: [
+      "quality control chemist",
+      "laboratory analyst",
+      "R&D chemist",
+    ],
+    labFacilities: ["Adsorption Testing Units (BET Surface Area, Iodine Number)", "UV-Visible Spectrophotometers", "QC Labs"],
+    featured: false,
+  },
+  macksons_paints: {
+    id: "macksons_paints",
+    name: "Macksons Paints Lanka (Pvt) Ltd (Multilac)",
+    shortName: "Multilac",
+    industry: "chemical",
+    industryLabel: "Chemical Manufacturing",
+    icon: "⚗️",
+    tagline: "Leading Sri Lankan paint manufacturer",
+    description:
+      "Leading Sri Lankan paint manufacturer established in 1981, specializing in decorative, industrial, and eco-friendly coatings.",
+    location: {
+      headquarters: "Macksons House, 443, Galle Road, Colombo 03, Sri Lanka.",
+      factory: "Sri Lanka",
+    },
+    contact: {
+      phone: "+94 11 553 0225",
+      email: "inquiry@multilac.com",
+    },
+    careers: {
+      url: "https://multilac.com",
+      label: "Visit Multilac",
+    },
+    roles: [
+      "paint chemist",
+      "coating formulation scientist",
+      "R&D chemist",
+    ],
+    labFacilities: ["R&D Labs", "QC Labs", "Color Matching Labs", "Viscometers", "Gloss Meters", "Weathering Testers"],
+    featured: false,
+  },
+  nippon_paint: {
+    id: "nippon_paint",
+    name: "Nippon Paint Lanka (Pvt) Ltd",
+    shortName: "Nippon Paint Lanka",
+    industry: "chemical",
+    industryLabel: "Chemical Manufacturing",
+    icon: "⚗️",
+    tagline: "Produces architectural, automotive, and marine coatings",
+    description:
+      "Part of the global NIPSEA Group, it produces architectural, automotive, and marine coatings.",
+    location: {
+      headquarters: "No. 69A, Buthgamuwa Road, Rajagiriya, Sri Lanka.",
+      factory: "Sri Lanka",
+    },
+    contact: {
+      phone: "+94 11 460 0400",
+      email: "info@nipponpaint.com.lk",
+    },
+    careers: {
+      url: "https://nipponpaint.lk",
+      label: "Visit Nippon Paint",
+    },
+    roles: [
+      "coatings chemist",
+      "technical executive in paint technology",
+      "QC chemist",
+    ],
+    labFacilities: ["Performance Testing Labs", "Salt Spray Corrosion Chambers", "UV Weathering Chambers", "FTIR Spectrometers"],
+    featured: false,
+  },
+  jat_holdings: {
+    id: "jat_holdings",
+    name: "JAT Holdings PLC",
+    shortName: "JAT Holdings",
+    industry: "chemical",
+    industryLabel: "Chemical Manufacturing",
+    icon: "⚗️",
+    tagline: "Specializes in wood coatings and decorative paints",
+    description:
+      "Founded in 1993, this multinational specializes in wood coatings, decorative paints, and industrial chemicals.",
+    location: {
+      headquarters: "No. 351, Pannipitiya Road, Thalawathugoda, Sri Lanka.",
+      factory: "Sri Lanka",
+    },
+    contact: {
+      phone: "+94 11 440 7700",
+      email: "info@jatholdings.com",
+    },
+    careers: {
+      url: "https://jatholdings.com",
+      label: "Visit JAT Holdings",
+    },
+    roles: [
+      "paint formulation chemist",
+      "coatings technologist",
+      "QC chemist",
+    ],
+    labFacilities: ["Resin & Binder Production Labs", "Polymer Synthesis Hubs", "VOC Analysis Labs for Environmental Compliance"],
+    featured: false,
+  },
+  neochem: {
+    id: "neochem",
+    name: "Neochem International (Pvt) Ltd",
+    shortName: "Neochem",
+    industry: "chemical",
+    industryLabel: "Chemical Manufacturing",
+    icon: "⚗️",
+    tagline: "Supplier of industrial specialty chemicals",
+    description:
+      "Established in 2009 as a supplier of industrial specialty chemicals for the food, pharmaceutical, and polymer industries.",
+    location: {
+      headquarters: "478, Pannipitiya Road, Pelawatta, Battaramulla, Sri Lanka.",
+      factory: null,
+    },
+    contact: {
+      phone: "+94 11 278 5183",
+      email: "info@neochem.lk",
+    },
+    careers: {
+      url: "https://neochem.lk",
+      label: "Visit Neochem",
+    },
+    roles: [
+      "application chemist",
+      "technical executive for product development",
+      "lab chemist",
+    ],
+    labFacilities: ["Formulation Development Labs", "Application Testing Labs (Food & Personal Care Chemicals)"],
+    featured: false,
+  },
+  ceylon_oxygen: {
+    id: "ceylon_oxygen",
+    name: "Ceylon Oxygen Limited",
+    shortName: "Ceylon Oxygen",
+    industry: "chemical",
+    industryLabel: "Chemical Manufacturing",
+    icon: "⚗️",
+    tagline: "Leading manufacturer of industrial & medical gases",
+    description:
+      "Operating since 1936 as part of Linde plc, it is a leading manufacturer of industrial, medical, and specialty gases like oxygen and nitrogen.",
+    location: {
+      headquarters: "No. 50, Sri Pannananda Mawatha, Colombo 15, Sri Lanka.",
+      factory: "Sri Lanka",
+    },
+    contact: {
+      phone: "+94 11 476 0400",
+      email: "nayomi@ceylonoxygen.com",
+    },
+    careers: {
+      url: "https://www.linde.com/careers",
+      label: "Visit Ceylon Oxygen (Linde Plc)",
+    },
+    roles: [
+      "QC Chemist",
+      "Gas Analysis Technician",
+      "Safety Officer",
+    ],
+    labFacilities: ["Gas Chromatographs", "Purity Analyzers", "Pressure Testing Equipment"],
+    featured: false,
+  },
+  microchem: {
+    id: "microchem",
+    name: "MicroChem Laboratories (Pvt) Ltd",
+    shortName: "MicroChem",
+    industry: "analytical",
+    industryLabel: "Analytical Testing Lab",
+    icon: "🧪",
+    tagline: "Precision analytical testing services",
+    description:
+      "Established in 2003, this ISO/IEC 17025 accredited laboratory provides chemical and microbiological analytical testing services for industries such as food manufacturing, agriculture, and textiles.",
+    location: {
+      headquarters: "No. 134, Dehiwala Road, Bellanwila, Boralesgamuwa, Western Province, Sri Lanka.",
+      factory: null,
+    },
+    contact: {
+      phone: "+94 77 3152 797 / +94 11 2710 637 / +94 11 2710 639",
+      email: "info@microchem.lk",
+    },
+    careers: {
+      url: "https://microchem.lk",
+      label: "Visit MicroChem Website",
+    },
+    roles: [
+      "Analytical Chemist",
+      "Microbiologist",
+      "Lab Technician",
+      "Environmental Analyst",
+    ],
+    labFacilities: ["Chemical Testing Lab (Water, soil, food)", "Microbiology Lab", "Agricultural & Environmental Testing Facilities", "UV-Vis Spectrophotometers", "Titration Systems"],
+    featured: false,
+  },
+  tech_experts: {
+    id: "tech_experts",
+    name: "Tech Experts Ceylon (Private) Limited",
+    shortName: "Tech Experts Ceylon",
+    industry: "analytical",
+    industryLabel: "Analytical Reference Lab",
+    icon: "🧪",
+    tagline: "Your trusted lab testing & certification partner",
+    description:
+      "An analytical testing and certification company providing inspection and consultancy for food, beverages, spices, and environmental samples according to ISO standards.",
+    location: {
+      headquarters: "First Floor, No. 59/1, 1 Sunethradevi Road, Kohuwala, Nugegoda 10250, Sri Lanka.",
+      factory: null,
+    },
+    contact: {
+      phone: "+94 11 282 2066 / +94 71 449 1576 / +94 77 796 3656",
+      email: "techexpertsceylon@gmail.com",
+    },
+    careers: {
+      url: "https://techexpertsceylon.lk/",
+      label: "Visit Tech Experts Website",
+    },
+    roles: [
+      "Lab Analyst",
+      "Quality Control Chemist",
+      "Environmental Chemist",
+    ],
+    labFacilities: ["Food & Beverage Chemical Analysis", "Water Testing", "Industrial Environmental Chemistry", "HPLC / GC", "UV-Vis Spectrophotometer"],
+    featured: false,
+  },
+  intertek: {
+    id: "intertek",
+    name: "Intertek Lanka (Pvt) Ltd",
+    shortName: "Intertek Lanka",
+    industry: "analytical",
+    industryLabel: "Quality Assurance & Testing",
+    icon: "🧪",
+    tagline: "Total Quality. Assured.",
+    description:
+      "Part of a global network providing total quality assurance, including testing and certification for chemicals, agriculture, textiles, and oil & gas.",
+    location: {
+      headquarters: "No. 282, Kaduwela Road, Battaramulla, Sri Lanka.",
+      factory: null,
+    },
+    contact: {
+      phone: "+94 11 287 7300 / +94 11 471 4162",
+      email: "kamal.otwani@intertek.com",
+    },
+    careers: {
+      url: "https://www.intertek.com",
+      label: "Visit Intertek",
+    },
+    roles: [
+      "Quality Assurance Tester",
+      "Analytical Chemist",
+      "Certification Officer",
+    ],
+    labFacilities: ["SLAB-certified Labs", "GC & HPLC", "FTIR & UV-Vis", "Elemental Analyzers", "Wet Chemistry Setups"],
+    featured: false,
+  },
+  cecb: {
+    id: "cecb",
+    name: "CECB Laboratory Services",
+    shortName: "CECB Labs",
+    industry: "analytical",
+    industryLabel: "Engineering Material Testing",
+    icon: "🧪",
+    tagline: "Material testing & environmental analysis for engineering",
+    description:
+      "A specialized division of the state-owned Central Engineering Consultancy Bureau, providing material testing and environmental analysis for engineering projects.",
+    location: {
+      headquarters: "No. 11, Jawatta Road, Colombo 05, Sri Lanka.",
+      factory: "Branches in Ampara and Badulla",
+    },
+    contact: {
+      phone: "+94 11 250 5688 / +94 714 222 444",
+      email: "lab@cecb.lk",
+    },
+    careers: {
+      url: "https://www.cecb.lk/",
+      label: "Visit CECB",
+    },
+    roles: [
+      "Material Analyst",
+      "Environmental Compliance Officer",
+      "Chemical Tester",
+    ],
+    labFacilities: ["Soil, Aggregate & Cement Chemical Analysis", "Water Testing", "Air Quality Monitoring Units", "Noise & Vibration Instruments"],
+    featured: false,
+  },
+  lindel: {
+    id: "lindel",
+    name: "LINDEL Industrial Laboratories Limited (LILL)",
+    shortName: "LINDEL Labs",
+    industry: "analytical",
+    industryLabel: "Industrial Analytical Testing",
+    icon: "🧪",
+    tagline: "ISO-accredited testing for diverse industries",
+    description:
+      "A subsidiary of Lanka Industrial Estates Ltd providing ISO-accredited testing for food, petroleum, fertilizer, and solid waste.",
+    location: {
+      headquarters: "LINDEL Industrial Estate, Pattiwila Road, Sapugaskanda, Makola 11640, Sri Lanka.",
+      factory: null,
+    },
+    contact: {
+      phone: "+94 11 2401675 / +94 77 3760721",
+      email: "lill@itmin.net",
+    },
+    careers: {
+      url: "http://www.lill.lk/",
+      label: "Visit LINDEL Labs",
+    },
+    roles: [
+      "Petroleum Tester",
+      "Wastewater Analyst",
+      "Industrial Chemist",
+    ],
+    labFacilities: ["Water & Wastewater Analysis", "Petroleum & Fuel Testing", "Soil / Metal Testing", "Atomic Absorption Spectroscopy", "GC"],
+    featured: false,
+  },
+  ansell: {
+    id: "ansell",
+    name: "Ansell Lanka (Pvt) Ltd",
+    shortName: "Ansell Lanka",
+    industry: "polymer",
+    industryLabel: "Polymer & Rubber",
+    icon: "🏭",
+    tagline: "World-class protective solutions from Sri Lanka",
+    description:
+      "Ansell Lanka is a subsidiary of the global Ansell Limited, manufacturing high-quality medical and industrial gloves and protective equipment at its Sri Lankan facility.",
+    location: {
+      headquarters: "Biyagama, Sri Lanka",
+      factory: "Biyagama Export Processing Zone, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 11 248 7000",
+      email: "hr@ansell.com",
+    },
+    careers: {
+      url: "https://www.ansell.com/en/careers",
+      label: "Visit Ansell Careers",
+    },
+    roles: [
+      "Polymer Chemist",
+      "QC Analyst",
+      "Materials Scientist",
+      "Process Engineer",
+    ],
+    labFacilities: ["Tensile Tester", "Spectrophotometers", "Rheometers", "Thickness Gauges"],
+    featured: false,
+  },
+  lalan: {
+    id: "lalan",
+    name: "Lalan Group",
+    shortName: "Lalan Group",
+    industry: "polymer",
+    industryLabel: "Polymer & Rubber",
+    icon: "🏭",
+    tagline: "Sri Lanka's leading rubber manufacturer",
+    description:
+      "Lalan Group is one of Sri Lanka's largest and most diversified rubber product manufacturers, producing gloves, condoms, and other rubber goods for global export.",
+    location: {
+      headquarters: "Colombo, Sri Lanka",
+      factory: "Kuliyapitiya & Weliweriya, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 11 244 7006",
+      email: "info@lalangroup.com",
+    },
+    careers: {
+      url: "https://lalangroup.com/careers",
+      label: "Visit Lalan Group Careers",
+    },
+    roles: [
+      "Rubber Technologist",
+      "Quality Chemist",
+      "Lab Analyst",
+      "Process Technician",
+    ],
+    labFacilities: ["Rheometers", "Tensile Testers", "Viscometers", "pH Meters"],
+    featured: false,
+  },
+};
