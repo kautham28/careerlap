@@ -21,7 +21,7 @@ export default function TopBar({ onSearch, onNavClick, activePage }) {
       <div className="topbar-logo">
         <div className="topbar-logo-icon">🧪</div>
         <div className="topbar-logo-text">
-          Lanka <span>Career Lab</span>
+          Industrial Chemistry <span>Training Hub</span>
         </div>
       </div>
 

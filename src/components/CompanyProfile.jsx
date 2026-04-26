@@ -122,7 +122,7 @@ export default function CompanyProfile({ company, onBack }) {
       </div>
 
       {/* Lab Facilities */}
-      <div className="facilities-section">
+      <div className="facilities-section" style={{ marginBottom: 20 }}>
         <div className="detail-card-title">🔬 Lab Facilities & Equipment</div>
         <div className="facilities-list">
           {company.labFacilities.map((fac) => (
@@ -130,6 +130,25 @@ export default function CompanyProfile({ company, onBack }) {
           ))}
         </div>
       </div>
+
+      {/* Student Internship Records */}
+      {company.students && company.students.length > 0 && (
+        <div className="students-section detail-card">
+          <div className="detail-card-title">🎓 Student Internship Records</div>
+          <p style={{ fontSize: '0.85rem', color: 'var(--text-mid)', marginBottom: 12 }}>
+            The following student index numbers have completed or are currently undergoing industrial training at {company.shortName || company.name}.
+          </p>
+          <div className="students-grid">
+            {company.students.map((indexNum) => (
+              <div key={indexNum} className="student-tag">
+                <span className="student-tag-icon">🆔</span>
+                <span className="student-tag-number">{indexNum}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
     </div>
   );
 }

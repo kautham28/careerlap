@@ -84,10 +84,11 @@ ul { list-style: none; }
 
 .topbar-logo-text {
   font-family: 'Outfit', sans-serif;
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 1.05rem;
+  font-weight: 800;
   color: var(--navy);
-  line-height: 1.1;
+  line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 .topbar-logo-text span {
@@ -413,16 +414,26 @@ ul { list-style: none; }
 
 .hero-title {
   font-family: 'Outfit', sans-serif;
-  font-size: 2.6rem;
-  font-weight: 800;
+  font-size: 3.2rem;
+  font-weight: 900;
   color: var(--white);
-  line-height: 1.2;
-  margin-bottom: 14px;
+  line-height: 1.1;
+  margin-bottom: 20px;
   position: relative;
   z-index: 1;
+  background: linear-gradient(to right, #fff 40%, var(--teal) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.hero-title span { color: var(--teal); }
+.hero-title span { 
+  display: block;
+  font-size: 4.2rem;
+  background: linear-gradient(to right, var(--teal) 0%, #00ffcc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 4px;
+}
 
 .hero-sub {
   font-size: 1rem;
@@ -836,6 +847,44 @@ ul { list-style: none; }
 }
 
 .fade-in { animation: fadeIn 0.3s ease forwards; }
+
+/* Student Internship Section */
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.student-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.student-tag:hover {
+  border-color: #00a884;
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 168, 132, 0.08);
+}
+
+.student-tag-icon {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.student-tag-number {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #334155;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
 
 /* ─── Responsive ─────────────────────────────────────────────── */
 @media (max-width: 900px) {

@@ -3,7 +3,7 @@ export const industries = [
     id: "research",
     label: "Research Institutes",
     icon: "🔬",
-    companies: ["nifs", "iti", "slintec", "rrisl", "cri", "tri", "ichemc", "pri", "lscl", "hettigoda", "nwsdb", "earc"],
+    companies: ["nifs", "iti", "slintec", "rrisl", "cri", "tri", "ichemc", "pri", "lscl", "hettigoda", "nwsdb", "nwsdb_jaffna", "nwsdb_kandy", "nwsdb_welimada", "earc"],
   },
   {
     id: "pharma",
@@ -21,7 +21,7 @@ export const industries = [
     id: "cosmetic",
     label: "Cosmetic Industry",
     icon: "🧴",
-    companies: ["hemas", "oproma", "link", "unilever"],
+    companies: ["hemas", "oproma", "link", "unilever", "nature_secrete"],
   },
   {
     id: "chemical",
@@ -137,6 +137,7 @@ export const companies = {
       "Residue Analysis Laboratory (Food & Environmental)",
     ],
     labFacilities: ["Spectrometers", "Chromatographs", "Calibration Tools", "GC-MS", "HPLC"],
+    students: ["2021/SB/053", "2021/SB/111"],
     featured: false,
   },
   slintec: {
@@ -244,6 +245,7 @@ export const companies = {
       "Central Analytical Laboratory (CAL) — Soil, Water, Fertilizer & Food Analysis",
     ],
     labFacilities: ["Atomic Absorption Spectrophotometer (AAS)", "HPLC", "GC", "Moisture Analyzers"],
+    students: ["2021/SB/037"],
     featured: false,
   },
   tri: {
@@ -349,6 +351,7 @@ export const companies = {
       "Food & Technology Lab",
     ],
     labFacilities: ["Spectrophotometers", "pH Meters", "GC", "HPLC", "Separation Systems"],
+    students: ["2019/SB/102", "2019/SB/121", "2020/SB/082", "2020/SB/88", "2020/SB10", "2021/SB/096", "2021/SB/105", "2021/SB/028", "2021/SB/113"],
     featured: false,
   },
   lscl: {
@@ -786,6 +789,7 @@ export const companies = {
       "R&D Scientist",
     ],
     labFacilities: ["ISO 9001:2015 Certified QA Labs", "pH Meters", "Spectrophotometers", "GC / HPLC", "Viscometers", "Stability Chambers"],
+    students: ["2019/SB/007", "2020/SP/112"],
     featured: false,
   },
   oproma: {
@@ -878,6 +882,51 @@ export const companies = {
     labFacilities: ["Advanced R&D and QC Labs", "High Throughput Testing Equipment", "Formulation Hubs"],
     featured: false,
   },
+  nature_secrete: {
+    id: "nature_secrete",
+    name: "Nature Secrete (Nature's Beauty Creations Ltd)",
+    shortName: "Nature Secrete / NBC",
+    industry: "cosmetic",
+    industryLabel: "Cosmetic Industry",
+    icon: "🧴",
+    tagline: "Sri Lanka's leading herbal cosmetics manufacturer with a global presence",
+    description:
+      "Nature Secrete is a premier skincare and hair care brand featuring natural botanicals like carrot and argan oil. It is produced by Nature's Beauty Creations (NBC), Sri Lanka's largest and most awarded herbal cosmetics manufacturer. NBC combines ancient Ayurvedic wisdom with modern technology, maintaining ultra-hygienic facilities that surpass European GMP requirements and prioritizing eco-friendly, sustainable production.",
+    location: {
+      headquarters: "64/3, Kindelpitiya, Puswelhena, Millewa, Horana 12422, Sri Lanka",
+      factory: "Millewa, Horana, Sri Lanka",
+    },
+    contact: {
+      phone: "+94 34 2253302",
+      email: "info@nbc.lk",
+    },
+    careers: {
+      url: "https://www.nbc.lk/",
+      label: "Visit NBC Careers",
+    },
+    roles: [
+      "Chemist - Research & Development",
+      "Quality Assurance Officer",
+      "Production Executive",
+      "Formulation Scientist",
+      "Microbiologist",
+    ],
+    chemDivisions: [
+      "Plant Research Centre (Medicinal/Herbal Plants)",
+      "Formulation & Product Development",
+      "Quality Control & Assurance",
+      "Natural Extract Development",
+    ],
+    labFacilities: [
+      "International GMP & ISO Standards Facility",
+      "Plant Research Centre",
+      "Advanced Formulation Labs",
+      "Stability Testing Chambers",
+      "HPLC & Spectrometry Units",
+      "Eco-friendly Wastewater Treatment",
+    ],
+    featured: false,
+  },
   lion: {
     id: "lion",
     name: "Lion Brewery (Ceylon) PLC",
@@ -907,6 +956,7 @@ export const companies = {
       "Water Treatment Chemist",
     ],
     labFacilities: ["GC", "Spectrophotometer", "Microbiology Labs", "pH Meters", "HPLC"],
+    students: ["2020/SB/032"],
     featured: true,
   },
   uniken: {
@@ -1390,6 +1440,7 @@ export const companies = {
       "Process Technician",
     ],
     labFacilities: ["Rheometers", "Tensile Testers", "Viscometers", "pH Meters"],
+    students: ["2020/SB/009"],
     featured: false,
   },
   sandactive: {
@@ -1640,6 +1691,7 @@ export const companies = {
     },
     roles: ["Petroleum Chemist", "QC Lab Technician", "Safety Supervisor"],
     labFacilities: ["Petroleum Testing Labs", "Fuel Additive Analysis", "Viscosity and Flash Point Testers"],
+    students: ["2021/SB/008", "2021/SP/210"],
     featured: false,
   },
   slsi: {
@@ -1665,6 +1717,7 @@ export const companies = {
     },
     roles: ["Standards Officer", "Lab Analyst", "Quality Auditor"],
     labFacilities: ["Material Testing Labs", "Chemical Analysis Lab", "Microbiology Testing", "Food Analysis Hub"],
+    students: ["2021/SB/129", "2021/SB/114"],
     featured: false,
   },
   jrdc: {
@@ -1690,6 +1743,7 @@ export const companies = {
     },
     roles: ["Water Research Scientist", "Analytical Chemist", "Lab Coordinator"],
     labFacilities: ["Advanced Water Testing Facilities", "Purification Tech Hub", "Chemical Analysis Equipment"],
+    students: ["2020/SB/058", "2021/SB/132"],
     featured: false,
   },
   morison: {
@@ -1765,6 +1819,7 @@ export const companies = {
     },
     roles: ["QA/QC Analyst", "Microbiologist", "Sterile Processing Tech"],
     labFacilities: ["pH & Conductivity Meters", "High-Precision Balances", "Particulate Counters", "Sterility Incubators", "Endotoxin Testing (LAL)"],
+    students: ["2020/SB/013"],
     featured: false,
   },
   celogen: {
@@ -1940,6 +1995,7 @@ export const companies = {
     },
     roles: ["QC Analyst", "QA Executive", "Production Officer", "Analytical Chemist", "R&D Chemist"],
     labFacilities: ["Analytical Development Laboratory", "Microbiology Laboratory", "HPLC", "UV-Visible Spectrophotometer", "Stability chambers", "Dissolution testing apparatus"],
+    students: ["2019/SB/18", "2019/SB/104"],
     featured: false,
   },
   renuka: {
@@ -1965,6 +2021,7 @@ export const companies = {
     },
     roles: ["QC Chemist", "Food Chemist", "Laboratory Executive", "R&D Chemist"],
     labFacilities: ["GC", "Soxhlet Extraction Unit", "Kjeldahl Digestion & Distillation Unit", "Microbiology Laboratory", "Food chemistry testing laboratory", "Autoclave", "Incubator"],
+    students: ["2020/SB/053"],
     featured: false,
   },
   kotmale: {
@@ -1990,6 +2047,7 @@ export const companies = {
     },
     roles: ["Quality Assurance Executive", "Food Technologist", "QC Analyst"],
     labFacilities: ["Spectrophotometers", "Chromatography", "pH Meters", "Refractometers", "Microbiology Lab Areas"],
+    students: ["2021/SB062"],
     featured: false,
   },
   haycarb: {
@@ -2015,6 +2073,7 @@ export const companies = {
     },
     roles: ["Quality Control Chemist", "Laboratory Analyst", "R&D Chemist", "Process Chemist", "Environmental Chemist"],
     labFacilities: ["BET Surface Area Analyzer", "Particle size analyzers", "Adsorption testing systems", "GC", "Spectrophotometer", "TOC analyzers"],
+    students: ["2020/SB075", "2020/SP/212"],
     featured: false,
   },
   nwsdb: {
@@ -2065,6 +2124,7 @@ export const companies = {
     },
     roles: ["Research Scientist", "Agronomist", "Plant Pathologist", "Soil Scientist", "Analytical Chemist"],
     labFacilities: ["Microscopy", "Soil analysis facilities", "Postharvest Chemical component analysis"],
+    students: ["2020/SP/175"],
     featured: false,
   },
   bureau_veritas: {
@@ -2090,6 +2150,7 @@ export const companies = {
     },
     roles: ["Laboratory Analyst", "Chemical Testing Technician", "QC Chemist", "Environmental Chemist", "Cosmetics Analyst"],
     labFacilities: ["GC", "HPLC", "Atomic Absorption Spectrometer (AAS)", "FTIR Spectrometer", "Chemical Testing Laboratory", "Environmental Testing"],
+    students: ["2020/SB/090", "2021/SB/065"],
     featured: false,
   },
   avato: {
@@ -2115,6 +2176,7 @@ export const companies = {
     },
     roles: ["Assistant Chemist", "Water Sample Analyst", "Laboratory Technician"],
     labFacilities: ["UV–Visible Spectrophotometer", "BOD Incubator", "COD Reactor", "Atomic Absorption Spectrophotometer (AAS)", "Autoclave"],
+    students: ["2020/SB/097"],
     featured: false,
   },
   sgs: {
@@ -2140,6 +2202,7 @@ export const companies = {
     },
     roles: ["Laboratory Analyst", "Chemical Testing Technician", "QC Chemist", "Environmental Analyst"],
     labFacilities: ["GC", "HPLC", "ICP-OES / ICP-MS", "AAS", "UV-Visible Spectrophotometer", "Fume hoods", "Microbiology Laboratory"],
+    students: ["2021/SB/008", "2021/SP/210"],
     featured: false,
   },
   cpstl: {
@@ -2165,6 +2228,7 @@ export const companies = {
     },
     roles: ["Senior Chemist", "Laboratory Analyst", "Quality Control Officer"],
     labFacilities: ["Gas Chromatography (GC)", "Distillation apparatus", "Density meters", "Octane rating analyzers", "Sulfur analyzer", "Flash point testers"],
+    students: ["2021/SB/008", "2021/SP/210"],
     featured: false,
   },
   slsi: {
@@ -2190,6 +2254,7 @@ export const companies = {
     },
     roles: ["Standards Officer", "Quality Assessor", "Analytical Chemist", "Lab Technician"],
     labFacilities: ["ICP-MS", "Arc/Spark Emission Spectrophotometer", "Direct Mercury Analyzer", "GC-FID", "GC-MS/MS with Headspace System"],
+    students: ["2021/SB/129", "2021/SB/114"],
     featured: false,
   },
   jrdc: {
@@ -2215,6 +2280,109 @@ export const companies = {
     },
     roles: ["Water Quality Researcher", "Analytical Chemist", "Environmental Scientist"],
     labFacilities: ["Gas Chromatography (GC)", "UV-Vis Spectrophotometers", "Ion/elemental analyzers (AAS, ICP)", "HPLC", "Water quality analyzers"],
+    students: ["2020/SB/058", "2021/SB/132"],
+    featured: false,
+  },
+  nwsdb_jaffna: {
+    id: "nwsdb_jaffna",
+    name: "National Water Supply & Drainage Board - Jaffna",
+    shortName: "NWSDB Jaffna",
+    industry: "research",
+    industryLabel: "Research Institute",
+    icon: "🔬",
+    tagline: "Safe drinking water and sanitation services for the North",
+    description:
+      "A government statutory board in Sri Lanka responsible for safe drinking water, water distribution, sanitation services, and wastewater management across urban and rural areas in the Jaffna region.",
+    location: {
+      headquarters: "Regional office Sivan Pannai Road, Jaffna, Sri Lanka",
+      factory: null,
+    },
+    contact: {
+      phone: "021-2227268, 021-2217094, 021-2228962, 021-2227965",
+      email: "rmjaffna@yahoo.com",
+    },
+    careers: {
+      url: "https://www.waterboard.lk/job-opportunities/",
+      label: "Visit Job Opportunities",
+    },
+    roles: ["Laboratory Analyst", "Water Quality Analyst", "Environmental Chemist"],
+    chemDivisions: ["Chemistry Testing Lab", "Microbiology Lab", "Water Quality Control"],
+    labFacilities: [
+      "Spectrophotometers",
+      "pH and conductivity meters",
+      "Turbidity meter",
+      "Chemistry Testing Lab",
+      "Microbiology Lab",
+    ],
+    students: ["2019/SB/124", "2019/SB/101", "2020/SB/73", "2020/SB/52", "2021/SB/004", "2021/SB/035"],
+    featured: false,
+  },
+  nwsdb_kandy: {
+    id: "nwsdb_kandy",
+    name: "National Water Supply & Drainage Board - Kandy",
+    shortName: "NWSDB Kandy",
+    industry: "research",
+    industryLabel: "Research Institute",
+    icon: "🔬",
+    tagline: "Regional Support Center for the Central Province",
+    description:
+      "A government statutory board responsible for safe drinking water, water distribution, sanitation services, and wastewater management across urban and rural areas. This Regional Support Center (Central) serves the Kandy district and surrounding areas.",
+    location: {
+      headquarters: "Regional Support Center (Central), Dangolla Road, Gatambe, Peradeniya (near Kandy), Sri Lanka",
+      factory: null,
+    },
+    contact: {
+      phone: "081-2388086, 081-2385962, 081-2387149, 081-2388027",
+      email: "dgmcentral2018@gmail.com, adgmcnwsab@waterboard.lk",
+    },
+    careers: {
+      url: "https://www.waterboard.lk/job-opportunities/",
+      label: "Visit Job Opportunities",
+    },
+    roles: ["Laboratory Analyst", "Water Quality Analyst", "Environmental Chemist"],
+    chemDivisions: ["Chemistry Testing Lab", "Microbiology Lab", "Central Support Services"],
+    labFacilities: [
+      "Spectrophotometers",
+      "pH and conductivity meters",
+      "Turbidity meter",
+      "Chemistry Testing Lab",
+      "Microbiology Lab",
+    ],
+    students: ["2019/SB/027", "2019/SP/226", "2020/SB/061", "2021/SB/052", "2021/SB/106"],
+    featured: false,
+  },
+  nwsdb_welimada: {
+    id: "nwsdb_welimada",
+    name: "National Water Supply & Drainage Board - Welimada",
+    shortName: "NWSDB Welimada",
+    industry: "research",
+    industryLabel: "Research Institute",
+    icon: "🔬",
+    tagline: "Water distribution and sanitation for the Welimada region",
+    description:
+      "A government statutory board in Sri Lanka responsible for safe drinking water, water distribution, sanitation services, and wastewater management. This OIC Office serves the Welimada area under the Uva Regional Support Center.",
+    location: {
+      headquarters: "OIC Office, Wellawatta, Welimada, Sri Lanka",
+      factory: null,
+    },
+    contact: {
+      phone: "057-2244118",
+      email: "support@waterboard.lk",
+    },
+    careers: {
+      url: "https://www.waterboard.lk/job-opportunities/",
+      label: "Visit Job Opportunities",
+    },
+    roles: ["Laboratory Analyst", "Water Quality Analyst", "Environmental Chemist"],
+    chemDivisions: ["Chemistry Testing Lab", "Microbiology Lab", "Regional Maintenance"],
+    labFacilities: [
+      "Spectrophotometers",
+      "pH and conductivity meters",
+      "Turbidity meter",
+      "Chemistry Testing Lab",
+      "Microbiology Lab",
+    ],
+    students: ["2019/SB/082", "2019/SB/085", "2019/SB/108", "2019/SB/120", "2020/SB/88", "2021/SB/021"],
     featured: false,
   },
 };

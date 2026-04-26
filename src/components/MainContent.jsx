@@ -12,8 +12,8 @@ function HomePage({ onSelectCompany }) {
       <div className="home-hero">
         <div className="hero-badge">🇱🇰 Sri Lanka's Chemistry Career Guide</div>
         <h1 className="hero-title">
-          Find Your Path in<br />
-          <span>Chemistry &amp; Science</span>
+          Industrial Chemistry<br />
+          <span>Training Hub</span>
         </h1>
         <p className="hero-sub">
           Explore leading research institutes, pharmaceutical companies, food manufacturers, and
@@ -121,12 +121,12 @@ function AboutPage() {
   return (
     <>
       <div className="section-header">
-        <div className="section-title">About Lanka Career Lab</div>
+        <div className="section-title">About Industrial Chemistry Training Hub</div>
       </div>
       <div className="detail-card" style={{ maxWidth: 680 }}>
         <div className="detail-card-title">📖 About This Guide</div>
         <p style={{ fontSize: "0.9rem", color: "var(--text-mid)", lineHeight: 1.8, marginBottom: 16 }}>
-          Lanka Career Lab is a comprehensive career directory designed specifically for chemistry, science,
+          Industrial Chemistry Training Hub is a comprehensive career directory designed specifically for chemistry, science,
           and laboratory professionals in Sri Lanka. We aggregate information on leading employers, laboratory
           facilities, and career portals to help graduates and professionals navigate the job market efficiently.
         </p>
