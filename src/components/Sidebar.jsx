@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { industries, topRecruiters, quickLinks, companies } from "../data/companies";
+import { industries, topRecruiters, quickLinks } from "../data/companies";
 
 function AccordionSection({ trigger, children, defaultOpen = false }) {
   const [open, setOpen] = useState(defaultOpen);
@@ -19,8 +19,8 @@ function AccordionSection({ trigger, children, defaultOpen = false }) {
   );
 }
 
-export default function Sidebar({ selectedCompany, onSelectCompany }) {
-  const topRecruiterData = topRecruiters.map((id) => companies[id]);
+export default function Sidebar({ companies, selectedCompany, onSelectCompany }) {
+  const topRecruiterData = topRecruiters.map((id) => companies[id]).filter(Boolean);
 
   return (
     <aside className="sidebar">

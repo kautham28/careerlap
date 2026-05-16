@@ -1,10 +1,8 @@
-import { companies } from "../data/companies";
 import CompanyCard from "./CompanyCard";
 import CompanyProfile from "./CompanyProfile";
 
-const allCompanies = Object.values(companies);
-
-function HomePage({ onSelectCompany }) {
+function HomePage({ companies, onSelectCompany }) {
+  const allCompanies = Object.values(companies);
   const featured = allCompanies.filter((c) => c.featured);
   return (
     <>
@@ -49,7 +47,8 @@ function HomePage({ onSelectCompany }) {
   );
 }
 
-function AllCompaniesPage({ onSelectCompany, searchQuery }) {
+function AllCompaniesPage({ companies, onSelectCompany, searchQuery }) {
+  const allCompanies = Object.values(companies);
   const filtered = allCompanies.filter((co) => {
     if (!searchQuery) return true;
     const q = searchQuery.toLowerCase();
@@ -146,7 +145,7 @@ function AboutPage() {
   );
 }
 
-export default function MainContent({ activePage, selectedCompany, onSelectCompany, onBack, searchQuery }) {
+export default function MainContent({ companies, activePage, selectedCompany, onSelectCompany, onBack, searchQuery }) {
   if (selectedCompany) {
     const co = companies[selectedCompany];
     return (
@@ -158,8 +157,8 @@ export default function MainContent({ activePage, selectedCompany, onSelectCompa
 
   return (
     <main className="content-area">
-      {activePage === "home" && <HomePage onSelectCompany={onSelectCompany} />}
-      {activePage === "all" && <AllCompaniesPage onSelectCompany={onSelectCompany} searchQuery={searchQuery} />}
+      {activePage === "home" && <HomePage companies={companies} onSelectCompany={onSelectCompany} />}
+      {activePage === "all" && <AllCompaniesPage companies={companies} onSelectCompany={onSelectCompany} searchQuery={searchQuery} />}
       {activePage === "resources" && <ResourcesPage />}
       {activePage === "about" && <AboutPage />}
     </main>
